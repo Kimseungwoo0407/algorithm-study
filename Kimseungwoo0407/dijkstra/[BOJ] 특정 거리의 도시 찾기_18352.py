@@ -32,6 +32,7 @@ def dijkstra(graph, start):
                 distances[next_node] = distance
                 heapq.heappush(queue, [distance, next_node])  # 다음 인접 거리를 계산 하기 위해 큐에 삽입
     return distances
+
 dist_start = dijkstra(graph, X)
 find = False
 for idx, i in enumerate(dist_start):
